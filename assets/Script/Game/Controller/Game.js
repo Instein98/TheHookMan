@@ -263,8 +263,8 @@ cc.Class({
                 switch (this.pfArray01[i].name) {
                     case 'P_rotation':
                         let P_rotation = this.pfArray01[i].getComponent('P_rotation');
-                        let Px = this.pfArray01[i].x+320;
-                        let Py = this.pfArray01[i].y+570;
+                        let Px = this.pfArray01[i].x+this.xOffset;
+                        let Py = this.pfArray01[i].y+this.yOffset;
                         let P = cc.p(Px,Py);
                         let Rp = cc.pSub(R,P);
                         // this.graphic.getComponent('Graphic').drawRectangle2(cc.pAdd(P,P_rotation.p1).x,cc.pAdd(P,P_rotation.p1).y,cc.pAdd(P,P_rotation.p2).x,cc.pAdd(P,P_rotation.p2).y,cc.pAdd(P,P_rotation.p4).x,cc.pAdd(P,P_rotation.p4).y,cc.pAdd(P,P_rotation.p3).x,cc.pAdd(P,P_rotation.p3).y,);
@@ -276,10 +276,10 @@ cc.Class({
                     break;
                 
                     default:
-                        let Maxx = this.pfArray01[i].x + this.pfArray01[i].width/2 * this.pfArray01[i].scaleX+320;
-                        let Minx = this.pfArray01[i].x - this.pfArray01[i].width/2 * this.pfArray01[i].scaleX+320;
-                        let Maxy = this.pfArray01[i].y + this.pfArray01[i].height/2 * this.pfArray01[i].scaleY+570;
-                        let Miny = this.pfArray01[i].y - this.pfArray01[i].height/2 * this.pfArray01[i].scaleY+570;
+                        let Maxx = this.pfArray01[i].x + this.pfArray01[i].width/2 * this.pfArray01[i].scaleX+this.xOffset;
+                        let Minx = this.pfArray01[i].x - this.pfArray01[i].width/2 * this.pfArray01[i].scaleX+this.xOffset;
+                        let Maxy = this.pfArray01[i].y + this.pfArray01[i].height/2 * this.pfArray01[i].scaleY+this.yOffset;
+                        let Miny = this.pfArray01[i].y - this.pfArray01[i].height/2 * this.pfArray01[i].scaleY+this.yOffset;
                         // this.graphic.getComponent('Graphic').drawRectangle(Maxx,Minx,Maxy,Miny);
                         if(Rx>Minx && Rx<Maxx && Ry>Miny && Ry<Maxy){
                             Rope.setFixed();
@@ -294,8 +294,8 @@ cc.Class({
                 switch (this.pfArray02[i].name) {
                     case 'P_rotation':
                         let P_rotation = this.pfArray02[i].getComponent('P_rotation');
-                        let Px = this.pfArray02[i].x+320;
-                        let Py = this.pfArray02[i].y+570;
+                        let Px = this.pfArray02[i].x+this.xOffset;
+                        let Py = this.pfArray02[i].y+this.yOffset;
                         let P = cc.p(Px,Py);
                         let Rp = cc.pSub(R,P);
                         // this.graphic.getComponent('Graphic').drawRectangle2(cc.pAdd(P,P_rotation.p1).x,cc.pAdd(P,P_rotation.p1).y,cc.pAdd(P,P_rotation.p2).x,cc.pAdd(P,P_rotation.p2).y,cc.pAdd(P,P_rotation.p4).x,cc.pAdd(P,P_rotation.p4).y,cc.pAdd(P,P_rotation.p3).x,cc.pAdd(P,P_rotation.p3).y,);
@@ -307,10 +307,10 @@ cc.Class({
                     break;
                 
                     default:
-                        let Maxx = this.pfArray02[i].x + this.pfArray02[i].width/2 * this.pfArray02[i].scaleX+320;
-                        let Minx = this.pfArray02[i].x - this.pfArray02[i].width/2 * this.pfArray02[i].scaleX+320;
-                        let Maxy = this.pfArray02[i].y + this.pfArray02[i].height/2 * this.pfArray02[i].scaleY+570;
-                        let Miny = this.pfArray02[i].y - this.pfArray02[i].height/2 * this.pfArray02[i].scaleY+570;
+                        let Maxx = this.pfArray02[i].x + this.pfArray02[i].width/2 * this.pfArray02[i].scaleX+this.xOffset;
+                        let Minx = this.pfArray02[i].x - this.pfArray02[i].width/2 * this.pfArray02[i].scaleX+this.xOffset;
+                        let Maxy = this.pfArray02[i].y + this.pfArray02[i].height/2 * this.pfArray02[i].scaleY+this.yOffset;
+                        let Miny = this.pfArray02[i].y - this.pfArray02[i].height/2 * this.pfArray02[i].scaleY+this.yOffset;
                         // this.graphic.getComponent('Graphic').drawRectangle(Maxx,Minx,Maxy,Miny);
                         if(Rx>Minx && Rx<Maxx && Ry>Miny && Ry<Maxy){
                             Rope.setFixed();
@@ -322,10 +322,10 @@ cc.Class({
         }
         // if(this.pfArray02!==null){ //直接复制上面的代码下来，改一下索引
         //     for(let i = 0; i < this.pfArray02.length ; i++){
-        //         let Maxx = this.pfArray02[i].x + this.pfArray02[i].width/2 * this.pfArray02[i].scaleX+320;
-        //         let Minx = this.pfArray02[i].x - this.pfArray02[i].width/2 * this.pfArray02[i].scaleX+320;
-        //         let Maxy = this.pfArray02[i].y + this.pfArray02[i].height/2 * this.pfArray02[i].scaleY+570;
-        //         let Miny = this.pfArray02[i].y - this.pfArray02[i].height/2 * this.pfArray02[i].scaleY+570;
+        //         let Maxx = this.pfArray02[i].x + this.pfArray02[i].width/2 * this.pfArray02[i].scaleX+this.xOffset;
+        //         let Minx = this.pfArray02[i].x - this.pfArray02[i].width/2 * this.pfArray02[i].scaleX+this.xOffset;
+        //         let Maxy = this.pfArray02[i].y + this.pfArray02[i].height/2 * this.pfArray02[i].scaleY+this.yOffset;
+        //         let Miny = this.pfArray02[i].y - this.pfArray02[i].height/2 * this.pfArray02[i].scaleY+this.yOffset;
         //         // this.graphic.getComponent('Graphic').drawRectangle(Maxx,Minx,Maxy,Miny);
         //         if(Rx>Minx && Rx<Maxx && Ry>Miny && Ry<Maxy){
         //             Rope.setFixed();
@@ -357,6 +357,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
  
     onLoad:function () { 
+        this.windowSize = cc.director.getWinSizeInPixels();
         cc.director.getPhysicsManager().enabled = true;
         this.Rope = this.rope.getComponent('Rope');
         // this.setListener();
@@ -373,6 +374,8 @@ cc.Class({
         this.back01.getChildByName("BoundR").getComponent(cc.RigidBody).syncPosition(false);
         this.spawnPlatforms(-(this.bgBB.yMax - this.bgBB.yMin)/2+757.5,this.back01.width * this.back01.scaleX,this.back01.height * this.back01.scaleY,1);
 
+        this.xOffset = 320/640 * this.windowSize.width;
+        this.yOffset = 570/1146 * this.windowSize.height;
         // cc.director.getPhysicsManager().debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
         // cc.PhysicsManager.DrawBits.e_pairBit |
         // cc.PhysicsManager.DrawBits.e_centerOfMassBit |

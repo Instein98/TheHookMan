@@ -161,9 +161,7 @@
     "normal_platform": {
       "__uuid__": "49ee519f-7fa9-40b7-b4a5-0f00f616ffc0"
     },
-    "grass_platform": {
-      "__uuid__": "c013beb9-7973-4c41-8e5e-b7f06f3a5ed0"
-    },
+    "grass_platform": null,
     "ice_platform": {
       "__uuid__": "24db68f7-40ae-411c-8b70-5b29e8f8dea6"
     },
@@ -870,8 +868,8 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1.05,
-    "_scaleY": 1.05,
+    "_scaleX": 1,
+    "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 167,
