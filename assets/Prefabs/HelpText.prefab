@@ -471,7 +471,7 @@
       "__id__": 9
     },
     "_enabled": true,
-    "_N$string": "\n<b>Welcome to <i>The Hook Man!</i></b>\nIn this game you can control a ninja to climb higher and higher by using a Grappling Hook!\n<img src='J_bottom'/> is the joystick to control the launch direction of the hook.\n<img src='B_up'/> is the buttom to launch and pull back the hook.\n<img src='B_left'/> and <img src='B_right'/> is to accelerate horizontally.\n<color=red>Try not to fall, or you may die!</c>\n\n<b>Tips:</b>\n1. Utilize circular motion to find the best chance to get to the next platform.\n2. Stuck on a certain platform? Try to lock the platform you are standing on.",
+    "_N$string": "\n<b>Welcome to <i>The Hook Man!</i></b>\nIn this game you can control a ninja to climb higher and higher by using a Grappling Hook!\n<img src='J_bottom'/> is the joystick to control the launch direction of the hook.\n<img src='B_up'/> is the button to launch and pull back the hook.\n<img src='B_left'/> and <img src='B_right'/> is to accelerate horizontally.\n<color=red>Try not to fall, or you may die!</c>\n\n<b>Tips:</b>\n1. Utilize circular motion to find the best chance to get to the next platform.\n2. Stuck on a certain platform? Try to lock the platform you are standing on.",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 30,
     "_N$font": null,
