@@ -14,7 +14,7 @@ Play on a web browser (PC or smartphone): [Online website](https://instein98.git
 
 - ##### On smartphone:
 
-![](http://q2jvz9fjf.bkt.clouddn.com/JoyStick.png)is the joystick to control the launch direction of the hook.![](http://q2jvz9fjf.bkt.clouddn.com/B_up.png) is the button to launch and pull back the hook.![l](http://q2jvz9fjf.bkt.clouddn.com/B_left.png)and ![](http://q2jvz9fjf.bkt.clouddn.com/B_right.png) is to accelerate horizontally.
+![](figures/JoyStick.png)is the joystick to control the launch direction of the hook.![](figures/B_up.png) is the button to launch and pull back the hook.![l](figures/B_left.png)and ![](figures/B_right.png) is to accelerate horizontally.
 
 - ##### On PC:
 
@@ -28,8 +28,8 @@ Play on a web browser (PC or smartphone): [Online website](https://instein98.git
 
 1. Utilize circular motion to find the best chance to get to the next platform.
 
-   ![](http://q2jvz9fjf.bkt.clouddn.com/thehookman/gif1.gif)
+   ![](figures/gif1-small.gif)
 
 2. Stuck on a certain platform? Try to lock the platform you are standing on.
 
-   ![](http://q2jvz9fjf.bkt.clouddn.com/thehookman/gif2.gif)
+   ![](figures/gif2-small.gif)
