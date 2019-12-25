@@ -252,9 +252,12 @@ cc.Class({
                     }
                     break;
                 case 'P_rotation':
+
                     let P_rotation = this.connectedPlatform.getComponent('P_rotation');
-                    let Px = this.connectedPlatform.x+320;
-                    let Py = this.connectedPlatform.y+570;
+                    // let Px = this.connectedPlatform.x+320;
+                    // let Py = this.connectedPlatform.y+570;
+                    let Px = this.connectedPlatform.x+this.xOffset;
+                    let Py = this.connectedPlatform.y+this.yOffset;
                     let P = cc.p(Px,Py);
                     let tempVec = cc.pSub(cc.p(this.fixedX,this.fixedY),P);
                     tempVec.rotateSelf(-P_rotation.rad);
@@ -277,6 +280,9 @@ cc.Class({
         this.state = State.shrinkF;
         this.changeFixPoint = 0;
         this.connectedPlatform = null;
+        this.windowSize = cc.director.getWinSizeInPixels();
+        this.xOffset = 320/640 * this.windowSize.width;
+        this.yOffset = 570/1146 * this.windowSize.height;
         // this.platforms = this.Platforms.children;
 
 

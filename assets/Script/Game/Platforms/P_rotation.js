@@ -18,9 +18,12 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function () {
+        this.windowSize = cc.director.getWinSizeInPixels();
+        this.xOffset = 320/640 * this.windowSize.width;
+        this.yOffset = 570/1146 * this.windowSize.height;
         this.time = 0;
-        this.x = this.node.x + 320;
-        this.y = this.node.y + 570;
+        this.x = this.node.x + this.xOffset;
+        this.y = this.node.y + this.yOffset;
         this.Maxx = this.x + this.node.width/2;
         this.Minx = this.x - this.node.width/2;
         this.Maxy = this.y + this.node.height/2;

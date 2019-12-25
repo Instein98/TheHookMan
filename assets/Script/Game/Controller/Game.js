@@ -29,7 +29,10 @@ cc.Class({
         graphic: cc.Node,
         back_audio:cc.Node,
         over_audio:cc.Node,
-
+        ground_platform:cc.Node,
+        labels:cc.Node,
+        buttons:cc.Node,
+        joysticks:cc.Node,
     },
 
 
@@ -339,6 +342,9 @@ cc.Class({
 
     GameOverDetect(){
         if(this.camera.getComponent('Camera').gameOver&&this.overTime==0){
+            this.buttons.active = false;
+            this.joysticks.active = false;
+            this.labels.active = false;
             var gameover = cc.instantiate(this.gameover);
             this.camera.addChild(gameover);
             gameover.setPosition(0,0);
@@ -369,10 +375,11 @@ cc.Class({
         this.back01 = this.backPool.get();
         this.bgBB = this.back01.getBoundingBox();
         this.node.addChild(this.back01);
-        this.back01.setPosition(-(this.bgBB.xMax - this.bgBB.xMin)/2,-(this.bgBB.yMax - this.bgBB.yMin)/2+90 ); //相对于Canvas的坐标！
+        // this.back01.setPosition(-(this.bgBB.xMax - this.bgBB.xMin)/2,-(this.bgBB.yMax - this.bgBB.yMin)/2+90 ); //相对于Canvas的坐标！
+        this.back01.setPosition(-(this.bgBB.xMax - this.bgBB.xMin)/2,this.ground_platform.y-(this.node.height)/2);
         this.back01.getChildByName("BoundL").getComponent(cc.RigidBody).syncPosition(false);
         this.back01.getChildByName("BoundR").getComponent(cc.RigidBody).syncPosition(false);
-        this.spawnPlatforms(-(this.bgBB.yMax - this.bgBB.yMin)/2+757.5,this.back01.width * this.back01.scaleX,this.back01.height * this.back01.scaleY,1);
+        this.spawnPlatforms(-(this.node.height)/2+680,this.back01.width * this.back01.scaleX,this.back01.height * this.back01.scaleY,1);
 
         this.xOffset = 320/640 * this.windowSize.width;
         this.yOffset = 570/1146 * this.windowSize.height;
