@@ -21,8 +21,9 @@ cc.Class({
 
     Help(){
         var text = cc.instantiate(this.text);
+        text.zIndex = 10;
         this.node.addChild(text);
-        text.setPosition(0,0);
+        text.setPosition(0,90);
     },
 
     Exit(){

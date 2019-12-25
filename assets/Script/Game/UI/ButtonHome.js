@@ -28,7 +28,7 @@ cc.Class({
 
     onTouchEnd(){
         this.node.color = this.released;
-        cc.director.loadScene("StartMenu");
+        cc.director.loadScene("StartMenu-new");
     },
 
     // LIFE-CYCLE CALLBACKS:

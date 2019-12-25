@@ -348,9 +348,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 0,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -362,7 +362,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 473.30000000000285,
-      "height": 1200
+      "height": 1000
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -371,7 +371,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -90
+      "y": -122
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -471,14 +471,14 @@
       "__id__": 9
     },
     "_enabled": true,
-    "_N$string": "       <outline color= white width=0.2><color=yellow><b>欢迎玩这款游戏！</b></outline></c>此版本为该游戏v1.6版本，制作时间16个工作日。\n       游戏玩法很简单，操作要求较高。控制左下角的虚拟摇杆 <img src='J_bottom'/> 调整绳索发射方向；←左加速按钮 <img src='B_left'/> 和→右加速按钮 <img src='B_right'/> 来进行水平方向的左右加速；另外， <img src='B_up'/> 这个按钮用来控制绳索的发射和回收。<color=red>注意：按一下发射，如果没有钩住物体，绳索会自动回收。如果钩住了物体，要再按一下才会回收。</c>\n       <color=yellow>Have fun!</c>\n    <u> ——————————————— </u>\n       更新说明：\n       优化平台生成算法，扩大游戏界面的虚拟遥感和操控按钮的感应区域，游戏界面增加返回和重玩按钮，扩大平台，固定玩家的旋转角度解决瞄准偏差问题，调整摄像头跟随参数防止操作按键遮挡玩家，解决绳索按键反应过于灵敏导致脱钩。修改按钮、平台、人物、绳索等贴图，增加人物动作。新增移动平台、旋转平台、消失平台、传送带平台、弹簧平台。增加游戏背景音乐和结束音效。<color=red>平台皆可从下往上单向穿过。</c>",
+    "_N$string": "\n<b>Welcome to <i>The Hook Man!</i></b>\nIn this game you can control a ninja to climb higher and higher by using a Grappling Hook!\n<img src='J_bottom'/> is the joystick to control the launch direction of the hook.\n<img src='B_up'/> is the buttom to launch and pull back the hook.\n<img src='B_left'/> and <img src='B_right'/> is to accelerate horizontally.\n<color=red>Try not to fall, or you may die!</c>\n\n<b>Tips:</b>\n1. Utilize circular motion to find the best chance to get to the next platform.\n2. Stuck on a certain platform? Try to lock the platform you are standing on.",
     "_N$horizontalAlign": 0,
-    "_N$fontSize": 26.699999999999882,
+    "_N$fontSize": 30,
     "_N$font": null,
     "_N$maxWidth": 473.30000000000285,
     "_N$lineHeight": 50,
     "_N$imageAtlas": {
-      "__uuid__": "f6892295-564d-42de-a5d2-78ef8d69fae5"
+      "__uuid__": "8cda381b-f6c4-4ba9-9add-b483cfd177dd"
     },
     "_N$handleTouchEvent": true
   },
