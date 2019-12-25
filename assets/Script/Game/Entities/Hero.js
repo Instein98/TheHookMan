@@ -21,9 +21,9 @@ cc.Class({
 
     onKeyDown: function(event){
         switch(event.keyCode){
-            // case cc.KEY.w :
-            //     this.jetU = true;
-            // break;
+            case cc.KEY.t :
+                this.jetU = true;
+            break;
             case cc.KEY.a :
                 this.jetL = true;
             break;
@@ -35,7 +35,7 @@ cc.Class({
 
     onKeyUp: function(event){
         switch(event.keyCode){
-            case cc.KEY.w :
+            case cc.KEY.t :
                 this.jetU = false;
             break;
             case cc.KEY.a :
