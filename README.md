@@ -1,35 +1,38 @@
 # The Hook Man
 
-It is a vertical-scroll game inspired by Doodle Jump. In this game you can control a ninja to climb higher and higher by using a <i>Grappling Hook</i>! Try not to fall, or your ninja may die!
+Embark on a thrilling vertical adventure in this Doodle Jump-inspired game! Control a nimble ninja as you climb to dizzying heights using a <i>Grappling Hook</i>. Test your reflexes, defy gravity, and see how high you can ascend!
 
-### Installation
+### Install or Play Online
 
-Play on a smartphone with android system: [apk download link](https://github.com/Instein98/TheHookMan/releases/download/V1.0.0/TheHookMan.apk)
+- Play Online: [instein.itch.io/thehookman](instein.itch.io/thehookman)
 
-Play on a web browser (PC or smartphone): [Online website](https://instein98.github.io/projects/theropeman/)
-
-(This game is designed for smartphone, but can also be played on PC)
+- Install on Android: [TheHookMan.apk](https://github.com/Instein98/TheHookMan/releases/download/V1.0.0/TheHookMan.apk)
 
 ### Instructions
 
-- ##### On smartphone:
+- ##### On Smartphone:
 
-![](figures/JoyStick.png)is the joystick to control the launch direction of the hook.![](figures/B_up.png) is the button to launch and pull back the hook.![l](figures/B_left.png)and ![](figures/B_right.png) is to accelerate horizontally.
+  <img src="figures/JoyStick.png" width="40" />:  Drag to control hook direction
+
+  <img src="figures/B_up.png" width="35" />:  Launch/retract hook
+
+  <img src="figures/B_left.png" width="35" /> <img src="figures/B_right.png" width="31" />:  Horizontal movement
+
 
 - ##### On PC:
 
-  Use <b>mouse</b> to control the joystick; 
-
-  Use <b>space</b> to launch and pull back the hook;
-
-  Use the key <b>A/D</b> to accelerate horizontally.
+  **Mouse**: Drag <img src="figures/JoyStick.png" width="30" /> to control hook direction
+  
+  **Space**: Launch/retract hook
+  
+  **A/D**: Move horizontally
 
 ### Tips
 
-1. Utilize circular motion to find the best chance to get to the next platform.
+1. **Master Circular Motion**: Find the perfect swing to reach higher platforms
 
    ![](figures/gif1-small.gif)
 
-2. Stuck on a certain platform? Try to lock the platform you are standing on.
+2. **Platform Locking**: Stuck? Try securing your position on the current platform
 
    ![](figures/gif2-small.gif)
